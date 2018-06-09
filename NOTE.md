@@ -6,14 +6,20 @@ Setup a local kubernetes cluster.
 Design:
 ------
 
-* At least 3 Kubernetes Nodes. Running as QEMU/KVM virtual machines (for now).
-* +1 Node outside of Kubernetes, use this as our proxy server, network gateway, DHCP server (if needed), PXE Server, etc.
+* At least 3 Kubernetes Nodes. Running as QEMU/KVM virtual
+  machines (for now).
+* +1 Node outside of Kubernetes, use this as our proxy server,
+  network gateway, DHCP server (if needed), PXE Server, etc.
 * OS: TBD - Toss up between Ubuntu, CentOS7 and CoreOS.
 * Storage: No persistent storage at the start.
-* Networking: Initial pass should just have a simple Bridge network connecting all 4 nodes.
-* Config: We need to manage the configs somehow, start out with simple
-  cloud-config + libvirt configs
+* Networking: Initial pass should just have a simple Bridge
+  network connecting all 4 nodes.
+* Config: We need to manage the configs somehow, start out with
+  simple cloud-config + libvirt configs
 * Provisioning: Initial installs will be by hand.
+* Management: I'd really really like to have tty based
+  console/serial access to all machines in the inital pass. (i.e
+  no VNC)
 
 
 General Idea:
