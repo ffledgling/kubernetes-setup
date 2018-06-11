@@ -1,0 +1,11 @@
+<network>
+  <name>kubernetes</name>
+  <bridge name="virbr1"/>
+  <forward/>
+  <ip address="192.168.254.1" netmask="255.255.255.0">
+    <dhcp>
+        <!-- This is a really nasty hack we add where limit the range to *exactly* the number of VMs we will have -->
+      <range start="192.168.254.2" end="192.168.254.99"/>
+    </dhcp>
+  </ip>
+</network>

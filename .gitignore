@@ -1,0 +1,7 @@
+# contains virtual machine images (qcow2 files, ignore)
+images/*
+
+# temporary files created for cloud init
+meta-data
+user-data
+network-config

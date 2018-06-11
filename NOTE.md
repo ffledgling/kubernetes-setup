@@ -49,3 +49,5 @@ Things I'd like to change up and try over the next couple of cycles:
   managed.
 * Provisioning: Try out digital rebar and pixiecore to see how
   it goes.
+* Provisioniong: Try out vagrant as a local orchestrator and see
+  if that's useful instead of trying to setup everything by hand
