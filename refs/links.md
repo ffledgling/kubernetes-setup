@@ -24,3 +24,9 @@ Setup cloud-init for "nocloud" correctly, especially networking:
 * network config format - <http://cloudinit.readthedocs.io/en/latest/topics/network-config-format-v1.html>
 * user-data requires `#cloud-config` at the top, otherwise throws misleading encoding errors - <https://github.com/hashicorp/terraform/issues/7063#issuecomment-382274222>
 
+
+Kubeadm install docs:
+
+* <https://kubernetes.io/docs/tasks/tools/install-kubeadm/>
+* <https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/>
+* <https://github.com/coreos/flannel/blob/master/Documentation/kubernetes.md>

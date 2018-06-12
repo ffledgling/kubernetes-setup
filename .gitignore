@@ -1,5 +1,6 @@
 # contains virtual machine images (qcow2 files, ignore)
 images/*
+working-cluster-images-backup/*
 
 # temporary files created for cloud init
 meta-data

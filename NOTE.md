@@ -20,6 +20,7 @@ Design:
 * Management: I'd really really like to have tty based
   console/serial access to all machines in the inital pass. (i.e
   no VNC)
+* Container Runtime: Docker
 
 
 General Idea:
@@ -51,3 +52,4 @@ Things I'd like to change up and try over the next couple of cycles:
   it goes.
 * Provisioniong: Try out vagrant as a local orchestrator and see
   if that's useful instead of trying to setup everything by hand
+* Container Runtime: Replace docker with kata and/or gVisor, see how that goes
