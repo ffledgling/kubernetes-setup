@@ -6,9 +6,9 @@ ssh_pub_key="$(cat ~/.ssh/id_rsa.pub)"
 
 for i in {1..3}
 do
+  node="kube$i"
   img="$img_dir/$node.qcow2"
   iso="$img_dir/$node-cidata.iso" 
-  node="kube$i"
 
   rsync -avz "$src_qcow" "$img"
 
