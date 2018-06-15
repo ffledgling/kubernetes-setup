@@ -1,4 +1,9 @@
 #!/bin/bash
+if [[ "$EUID" -ne 0 ]]
+then
+  echo "This script needs to be run as root inside the kube master node"
+  exit 42
+fi
 
 # We install flannel, following instructions here:
 # https://github.com/coreos/flannel/blob/master/Documentation/kubernetes.md

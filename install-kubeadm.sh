@@ -1,8 +1,15 @@
 #!/bin/bash
 
+if [[ "$EUID" -ne 0 ]]
+then
+  echo "This script needs to be run as root inside the kube master node"
+  exit 42
+fi
+
 # Docker is the de-facto run-time for now, maybe we'll try kata or gvisor later
 
-# Don't use these instructions... we need docker-ce from upstream docker.
+# Don't use these instructions... we need docker-ce for kubernetes from
+# upstream docker repos
 ##sudo dnf install -y docker
 ##sudo systemctl enable docker && systemctl start docker
 

@@ -74,7 +74,5 @@ EOF
     --console pty,target_type=serial \
     --os-type linux \
     --network bridge=virbr1,model=virtio
-    #--network bridge=virbr0,model=virtio
-    #--network network=default
 
 done
